@@ -1,10 +1,4 @@
 #!/usr/bin/env bash
-# SSH client configuration
-
-Host *
-    PasswordAuthentication no
-    IdentityFile ~/.ssh/school
-    SendEnv LANG LC_*
-    HashKnownHosts yes
-    GSSAPIAuthentication yes
-    GSSAPIDelegateCredentials no
+# Bash script that uses ssh to connect to your server using the private
+# key ~/.ssh/school with the user ubuntu
+ssh ubuntu@100.25.19.204 -i ~/.ssh/school
